@@ -96,16 +96,28 @@ section{
     justify-content: center;
     gap: 10rem;
 }
-.about img{
+.about img,
+.experience img{
     width: 30vw;
     border-radius: 50%;
     position: relative;
     z-index: 1;
     box-shadow:
-        0 0 30px rgba(0, 157, 255, 0.6),
-        0 0 60px rgb(255, 38, 241),
-        0 0 100px rgba(12, 102, 158, 0.386);
-    transition: 0.4s ease-in-out;
+        0 0 40px rgba(0, 191, 255, 0.9),
+        0 0 80px rgba(255, 0, 255, 0.8),
+        0 0 140px rgba(138, 43, 226, 0.7),
+        0 0 200px rgba(0, 191, 255, 0.5);
+    transition: all 0.4s ease;
+}
+
+.about img:hover,
+.experience img:hover{
+    transform: scale(1.03);
+    box-shadow:
+        0 0 50px rgba(0, 191, 255, 1),
+        0 0 100px rgba(255, 0, 255, 0.9),
+        0 0 180px rgba(138, 43, 226, 0.8),
+        0 0 250px rgba(0, 191, 255, 0.6);
 }
 
 .about img:hover{
